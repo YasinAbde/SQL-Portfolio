@@ -1,3 +1,3 @@
 # SQL-Portfolio
-Project Explinations
+Project Explinations:
 Average population selects the average populations of each country.
