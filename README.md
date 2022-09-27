@@ -1,4 +1,3 @@
 # SQL-Portfolio
-A collection of my SQL files
-Projects:
+Project Explinations
 Average population selects the average populations of each country.
