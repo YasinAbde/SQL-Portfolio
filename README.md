@@ -1,5 +1,5 @@
 # SQL-Portfolio
-Project Explinations
+Project Explanations
 
 Challenges (Count):
 
