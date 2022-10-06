@@ -140,3 +140,79 @@ Select round(min(lat_n),4) From station where lat_n > 38.7780;
 
 Select round(long_w,4) From station where lat_n > 38.7780 order by lat_n asc limit 1;
 
+--Higher Than 75 Marks
+--https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true
+--Query the Name of any student in STUDENTS who scored higher than 75 Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+Select name From students where marks > 75 order by (right(name,3)), id asc;
+
+--Employee Names
+--https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true
+--Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+
+Select name From Employee order by name;
+
+--Employee Salaries
+--https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true
+--Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than 10 months. Sort your result by ascending employee_id.
+
+Select name From employee where salary > 2000 and months < 10 order by employee_id;
+
+--Revising Aggregations - The Count Function
+--https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true
+--Query a count of the number of cities in CITY having a Population larger than 100,000.
+
+Select count(name) From city where population > 100000;
+
+--Revising Aggregations - The Sum Function
+--https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true
+--Query the total population of all cities in CITY where District is California.
+
+Select sum(population) From city where district = "California";
+
+--Revising Aggregations - Averages
+--https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/problem?isFullScreen=true
+--Query the average population of all cities in CITY where District is California.
+
+Select avg(population) From city where district ="California";
+
+--Average Population
+--https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true
+--Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+Select round(avg(population),0) From city;
+
+--Japan Population
+--https://www.hackerrank.com/challenges/japan-population/problem?isFullScreen=true
+--Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+
+Select sum(population) From city where countrycode = "JPN";
+
+--Population Density Difference
+--https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true
+--Query the difference between the maximum and minimum populations in CITY.
+
+select (max(population)-min(population)) from city;
+
+--Population Census
+--https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=true
+--Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+
+Select sum(city.population) From city 
+Join country cu on city.countrycode = cu.code
+Where cu.continent = 'Asia';
+
+--African Cities
+--https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true
+--Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+
+Select city.name From city 
+Join country cu on city.countrycode = cu.code
+Where continent='Africa';
+
+--Average Population of Each Continent
+--https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true
+--Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+
+Select country.continent, floor(avg(ci.population)) From country
+Join city ci on country.code = ci.countrycode group by continent;
