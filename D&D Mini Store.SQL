@@ -1,3 +1,7 @@
+--This was a Project on Kahn Academy to create your own dataset for a store and display basic querying skills using aggregate functions.
+--I chose to make my dataset for a store that sells miniature figures of the creatures from Dungeons and Dragons. 
+--The values in the table are the product ID, the product name, the creature's size catagory, the price of the product, and the material the miniature is made of.
+
 CREATE TABLE minis (id INTEGER PRIMARY KEY, item TEXT, size TEXT, price REAL, material TEXT);
 
 INSERT INTO minis (item, size, price, material) VALUES ("Goblin", "Small", 3, "Plastic"),
