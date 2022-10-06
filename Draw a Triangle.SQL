@@ -1,6 +1,0 @@
-declare @x int = 20;
-while @x > 0 
-begin
-print(replicate('* ',@x))
-set @x = @x-1
-end;
