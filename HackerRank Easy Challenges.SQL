@@ -41,7 +41,7 @@ Select name From city where countrycode = 'JPN';
 --https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true
 --Query a list of CITY and STATE from the STATION table.
 
-Select city, state From station;
+Select city, state From station; 
 
 --Weather Observation Station 2
 --https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true
