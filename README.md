@@ -1,11 +1,6 @@
 # SQL-Portfolio
 Project Explanations
 
-Contest Leaderboard:
-
-This was a practice challenge on HackerRank to test intermediate querie writing using joins. This statement selects the ID, name, and total score of students from the HACKERS and SUBMISSIONS tables, adding the best attempts of each student for each challenge to get their total scores, and excluding students who got a total score of 0, ordered by descending total scores and ascending ID. 
-
-
 Jojo Family Tree: 
 
 This was a project from Khan Academy to build a data set from scratch and display intermediate join skills. I chose to create a dataset based off of the characters from a tv show including their names, powers, seasons they were introduced, parental status, child status, and character ID number. The first statement selects the character ID numbers and names from the CHARACTERS table. The second statement selects the season number and season subtitles. The third statement selects the names of each character and the season number they were introduced. The fourth statement selects the names of all characters who are parents, the names of their children, and the subtitles of the seasons the parents and the children were introduced. The final statement selects the subtitles of each season, the number of characters in each season and the number of characters with powers in each season.
