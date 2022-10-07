@@ -1,3 +1,6 @@
+--This was a project from Khan Academy to use an existing dataset to test queries using aggragate functions, filtering and case functions as well as sorting using group by and order by.
+--I chose a dataset of Marvel characters that lists their ID numbers, names, popularity, moral alignment, gender, height in meters, weight in kg, hometown, intelligence, strength, speed, durability, energy projection, and fighting skill.
+
 CREATE TABLE marvels (ID INTEGER PRIMARY KEY,
     name TEXT,
     popularity INTEGER,
@@ -39,22 +42,44 @@ INSERT INTO marvels VALUES(23, "Ghost Rider", 86, "Good", "Male", 1.88, 99, "EUA
 INSERT INTO marvels VALUES(24, "Venon", 78, "Neutral", "Male", 1.90, 118, "EUA", 3, 4, 2, 6, 1, 4);
 INSERT INTO marvels VALUES(25, "Juggernaut", 76, "Neutral", "Male", 2.87, 862, "EUA", 2, 7, 2, 7, 1, 4);
 INSERT INTO marvels VALUES(26, "Professor X", 58, "Good", "Male", 1.83, 86, "EUA", 5, 2, 2, 2, 5, 3);
+
+--This first statement selects all from the table MARVELS.
+
 SELECT * FROM marvels;
-Select round(avg(height_m)) as avg_height,round(avg(weight_kg)) as avg_weight,max (intelligence),max (strength),min (speed),min (durability),round(avg(energy_Projection))as avg_energy_Projection,round(avg(fighting_Skills))as avg_fighting_Skill from marvels;
 
-select name, gender, energy_projection from marvels group by name having energy_projection > 3 order by gender, energy_projection;
+--The second statement selects the rounded average height, weight, energy projection, and fighting skills of the characters as well as the highest intelligence and strength, and the lowest speed and durability.
 
-select name, durability,
-    case
+Select round(avg(height_m)) as avg_height,round(avg(weight_kg)) as avg_weight,max (intelligence),
+	max (strength),min (speed),min (durability),round(avg(energy_Projection))as avg_energy_Projection,
+	round(avg(fighting_Skills))as avg_fighting_Skill 
+From marvels;
+
+--The third statement selects the names, genders and energy projection of characters with an energy projection of greater than 3, ordered by gender and energy projection.
+
+Select name, gender, energy_projection from marvels group by name having energy_projection > 3 order by gender, energy_projection;
+
+--The fourth statement creates a ranking of categories for durability starting from "squishy" and ending at "indestructable", and selects the characters names, durability score, and durability ranking and orders them by durability.
+
+Select name, durability,
+    Case
         when durability >=7 then "indestructable"
         when durability >=5 then "unbreakable"
         when durability >=3 then "tough"
         else "squishy"
-    end as "rating"
-from marvels order by durability;
+    End as "rating"
+From marvels order by durability;
 
-select name, gender, weight_kg, height_m from marvels where weight_kg > 60 and gender = "Female" or (gender = "Male" and weight_kg < 90 and height_m < 2) order by gender, weight_kg, height_m;
+--The fifth statement selects the name, gender, weight and height of each character who weight more than 60 kg and is female or is male who weighs less than 90 kg but is taller than 2 meters, and orders them by gender, weight, and height.
 
-select name, alignment, hometown from marvels where alignment IN ("Good") and hometown NOT IN ("USA") order by hometown;
+Select name, gender, weight_kg, height_m From marvels 
+	Where weight_kg > 60 and gender = "Female" 
+	Or (gender = "Male" and weight_kg < 90 and height_m < 2) 
+Order by gender, weight_kg, height_m;
 
-select gender, count(*) as count from marvels where strength > 4 and fighting_Skills > 3 group by gender;
+--The sixth statement selects the characters who are of good alignment and are not from the USA.
+
+Select name, alignment, hometown from marvels where alignment IN ("Good") and hometown NOT IN ("USA") order by hometown;
+
+--The final statement selects the number of characters with a strength greater than 4 and fighting skills greater than 3 for each gender.
+
+Select gender, count(*) as count from marvels where strength > 4 and fighting_Skills > 3 group by gender;
