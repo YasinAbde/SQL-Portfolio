@@ -1,5 +1,5 @@
 --Hackerrank.com hosts several challenge problems to help people prepare for coding interviews. https://www.hackerrank.com/domains/sql?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=sql
---These are all the easy challenges I completed, using MySQL, that I don't think need an expanation.
+--These are all the easy challenges I completed, using MySQL, that I don't think need an expanation. 
 
 --Revising the Select Query I
 --https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true
