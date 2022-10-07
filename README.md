@@ -1,9 +1,6 @@
 # SQL-Portfolio
 Project Explanations
 
-Occupations:
-
-This was a practice question on HackerRank to test intermediate querie writing pivoting tables. This statement selects the names from the OCCUPATIONS table and lists them alphabetically, grouping the names in columns by occupation.
 
 The PADS: 
 
