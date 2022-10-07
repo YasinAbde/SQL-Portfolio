@@ -11,4 +11,4 @@ From
         From hackers h join submissions s on h.hacker_id = s.hacker_id
         Group by h.hacker_id, h.name, s.challenge_id) as t1 --aggregates just the best attempts of each hacker for each challenge
 Group by hacker_id, name having total > 0
-Order by total desc, hacker_id;
+Order by total desc, hacker_id; 

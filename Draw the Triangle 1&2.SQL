@@ -7,7 +7,7 @@
 --* * * * 
 --* * * 
 --* * 
---*
+--* 
 --Write a query to print the pattern P(20).
 
 delimiter // --This sets up a delimiter which creates a repeatable procedure, and changes the delimiter_character from default (;) to (//)
