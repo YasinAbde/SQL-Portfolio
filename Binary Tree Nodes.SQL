@@ -1,4 +1,4 @@
---This was a practice challenge from HackerRank to test advanced querey writing.
+--This was a practice challenge from HackerRank to test advanced query writing.
 --This statement sorts each number into categories based on it's placement in a binary tree, which can be determined based on if it has any numbers above or below it in the binary tree.
 
 --Binary Tree Nodes

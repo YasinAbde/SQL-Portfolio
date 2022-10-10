@@ -1,4 +1,4 @@
---This was a practice challenge on HackerRank to test intermediate querie writing using joins.
+--This was a practice challenge on HackerRank to test intermediate query writing using joins.
 --This statement selects the ID, name, and number of challenges created of only the students who either didn't make the same number of challenges as any other student or made the highest number of challenges, from the CHALLENGES and HACKERS tables, ordered by ID.
 
 --Challenges 

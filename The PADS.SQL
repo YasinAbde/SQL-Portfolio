@@ -1,4 +1,4 @@
---This was a practice challenge on HackerRank to test advanced querey writing.
+--This was a practice challenge on HackerRank to test advanced query writing.
 --The first statement selects the name and first letter of their occupation of everyone in the OCCUPATIONS table, formats those names with parentheses around the first letter of the occupation, and orders them alphabetically.
 --The second statement lists how many entries for each occupation there are in the OCCUPATIONS table.
 
