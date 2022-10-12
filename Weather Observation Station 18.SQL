@@ -3,6 +3,6 @@
 
 --Weather Observation Station 18
 --https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true
---Query the Manhattan Distance between points  and  and round it to a scale of  decimal places.
+--Query the Manhattan Distance between points P1 and P2 and round it to a scale of 4 decimal places.
 
 Select ROUND((ABS(min(Lat_N)-max(Lat_N)))+(ABS(min(Long_W)-max(Long_W))),4) From station;
