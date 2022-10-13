@@ -5,7 +5,7 @@
 --https://www.hackerrank.com/challenges/placements/problem?isFullScreen=true
 --Write a query to output the names of those students whose best friends got offered a higher salary than them. Names must be ordered by the salary amount offered to the best friends. It is guaranteed that no two students got same salary offer.
 
-Select name From students S
+Select S.name From students S
     Join friends F on F.ID = S.ID
     Join packages PS on PS.ID = S.ID
     Join packages PF on PF.ID = F.Friend_ID
