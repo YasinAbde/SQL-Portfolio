@@ -1,7 +1,7 @@
 --This was a practice challenge on HackerRank to test alternative query writing.
 --This query creates a while loop and uses declared variables to determine all the prime numbers up to 1000, and then list them with an ampersand between them.
 
---Print Prime Numbers
+--Print Prime Numbers 
 --https://www.hackerrank.com/challenges/print-prime-numbers/problem?isFullScreen=true
 --Write a query to print all prime numbers less than or equal to 1000. Print your result on a single line, and use the ampersand (&) character as your separator (instead of a space).
 
