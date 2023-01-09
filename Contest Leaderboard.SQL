@@ -2,6 +2,7 @@
 --This statement selects the ID, name, and total score of students from the HACKERS and SUBMISSIONS tables, adding the best attempts of each student for each challenge to get their total scores, and excluding students who got a total score of 0, ordered by descending total scores and ascending ID.
 
 --Contest Leaderboard
+--MySQL
 --https://www.hackerrank.com/challenges/contest-leaderboard/problem?isFullScreen=true
 --Write a query to print the hacker_id, name, and total score of the hackers ordered by the descending score. If more than one hacker achieved the same total score, then sort the result by ascending hacker_id. Exclude all hackers with a total score of 0 from your result.
 

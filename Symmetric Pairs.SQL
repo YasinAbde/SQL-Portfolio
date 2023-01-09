@@ -2,6 +2,7 @@
 --This statement uses an implicit self join to select entries from the table Functions who's X match another entry's Y and who's Y match the same entry's X.
 
 --Symmetric Pairs
+--MySQL
 --https://www.hackerrank.com/challenges/symmetric-pairs/problem?isFullScreen=true
 --Two pairs (X1, Y1) and (X2, Y2) are said to be symmetric pairs if X1 = Y2 and X2 = Y1. Write a query to output all such symmetric pairs in ascending order by the value of X. List the rows such that X1 ≤ Y1.
 

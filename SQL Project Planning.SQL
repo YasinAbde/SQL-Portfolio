@@ -2,6 +2,7 @@
 --This query uses subqueries and an implicit join to list the project start date with its end date.
 
 --SQL Project Planning
+--MySQL
 --https://www.hackerrank.com/challenges/sql-projects/problem?isFullScreen=true
 --Write a query to output the start and end dates of projects listed by the number of days it took to complete the project in ascending order. If there is more than one project that have the same number of completion days, then order by the start date of the project.
 

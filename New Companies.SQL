@@ -2,6 +2,7 @@
 --This statement lists the company code and the name of the founder of each company, as well as how many Lead Managers, Senior Managers, Managers, and Emploees each company has. It also disregards duplicate entries.
 
 --New Companies
+--MySQL
 --https://www.hackerrank.com/challenges/the-company/copy-from/294158738?isFullScreen=true
 --Given the table schemas below, write a query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees. Order your output by ascending company_code.
 

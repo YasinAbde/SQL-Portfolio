@@ -2,6 +2,7 @@
 --This statement selects the median of the Northern Latitudes from the STATION table rounded to 4 decimal places.
 
 --Weather Observation Station 20
+--MySQL
 --https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true
 --Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 4 decimal places.
 

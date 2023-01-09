@@ -1,6 +1,7 @@
 --These are the only 2 practice challenges on HackerRank listed as "Alternative Queries"
 
 --Draw The Triangle 1
+--MySQL
 --https://www.hackerrank.com/challenges/draw-the-triangle-1/problem?isFullScreen=true
 --P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
 --* * * * * 

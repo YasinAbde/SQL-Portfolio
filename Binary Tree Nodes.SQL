@@ -2,6 +2,7 @@
 --This statement sorts each number into categories based on it's placement in a binary tree, which can be determined based on if it has any numbers above or below it in the binary tree.
 
 --Binary Tree Nodes
+--MySQL
 --https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true
 --Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
 	--Root: If node is root node.
