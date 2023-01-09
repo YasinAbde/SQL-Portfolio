@@ -3,6 +3,7 @@
 --To do this I needed to recreate the error with the replace function to remove all 0s and used the ceiling function to round the result to the nearest integer.
 
 --The Blunder
+--MySQL
 --https://www.hackerrank.com/challenges/the-blunder/problem?isFullScreen=true
 --Write a query calculating the amount of error (i.e.: actual - miscalculated average monthly salaries), and round it up to the next integer.
 

@@ -2,6 +2,7 @@
 --This statement calculates the Manhattan Distance (the absolute value x1-x2 + the absolute value of y1-y2)
 
 --Weather Observation Station 18
+--MySQL
 --https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true
 --Query the Manhattan Distance between points P1 and P2 and round it to a scale of 4 decimal places.
 
