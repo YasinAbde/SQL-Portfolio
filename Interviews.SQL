@@ -2,6 +2,7 @@
 --This statement joins 5 tables and prints the contest ID, contestant's ID, contestant's, total number of submissions, total number of submissions that recieved full scores (total accepted submissions), total number times a candidate viewed the challenge, and the total number of times unique candidates viewed the challenge.
 
 --Interviews
+--MySQL
 --https://www.hackerrank.com/challenges/interviews/problem
 --Write a query to print the contest_id, hacker_id, name, and the sums of total_submissions, total_accepted_submissions, total_views, and total_unique_views for each contest sorted by contest_id. Exclude the contest from the result if all four sums are 0.
 
