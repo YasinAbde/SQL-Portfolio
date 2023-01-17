@@ -193,3 +193,27 @@ Select sum(population) From city Where countrycode = 'JPN';
 --Query the difference between the maximum and minimum populations in CITY.
 
 Select max(population)-min(population) From city;
+
+--Population Census
+--https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=true
+--Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+
+Select sum(ci.population) From city ci
+Join country co on ci.countrycode = co.code
+Where co.continent = 'Asia';
+
+--African Cities
+--https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true
+--Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+
+Select ci.name From city ci
+Join country co on ci.countrycode = co.code
+Where co.continent = 'Africa';
+
+--Average Population of Each Continent
+--https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true
+--Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+
+Select co.continent, cast(avg(ci.population) as Integer) From city ci
+Join country co on ci.countrycode = co.code
+Group by co.continent;
