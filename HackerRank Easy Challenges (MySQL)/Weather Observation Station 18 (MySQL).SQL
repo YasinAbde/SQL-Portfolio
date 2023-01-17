@@ -1,5 +1,5 @@
 --This was a practice problem on HackerRank to test aggregate query writing.
---This statement calculates the Manhattan Distance (the absolute value x1-x2 + the absolute value of y1-y2)
+--This statement calculates the Manhattan Distance (the absolute value of x1-x2 + the absolute value of y1-y2)
 
 --Weather Observation Station 18
 --MySQL
