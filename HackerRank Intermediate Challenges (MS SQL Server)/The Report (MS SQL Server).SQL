@@ -14,4 +14,4 @@ Case
 g.grade,
 s.marks From students s
 Join grades g on s.marks between g.min_mark and g.max_mark --The between function is needed because the Grades table converts the double didget Mark into a single didget Grade, so to assign a mark a grade you can't just use an equals sign like most join functions. Instead between is used to assign the grade if the mark is between the assigned range for that grade (Min_Mark through Max_Mark).
-Order by g.grade desc, s.name asc, s.marks asc;
+Order by g.grade desc, s.name asc, s.marks asc; 
